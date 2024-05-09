@@ -47,7 +47,7 @@ int main(void)
 ```
 
 ## OUTPUT
-![Screenshot from 2024-03-10 20-54-36](https://github.com/Johnydj123/Linux-Process-API-fork-wait-exec/assets/145953459/51767074-08e9-4749-911c-2428caf1d578)
+![alt text](<../Screenshot 2024-05-09 204517.png>)
 
 
 ## C Program to create new process using Linux API system calls fork() and exit()
@@ -73,7 +73,7 @@ exit(0);}
 ```
 
 ## OUTPUT
-![Screenshot from 2024-03-10 20-55-05](https://github.com/Johnydj123/Linux-Process-API-fork-wait-exec/assets/145953459/2683bdc6-b444-49b1-b8ff-4109cddc00fd)
+![alt text](<../Screenshot 2024-05-09 204523.png>)
 
 
 ## C Program to execute Linux system commands using Linux API system calls exec() family
@@ -93,8 +93,8 @@ int main()
                 printf("child exited with status of %d\n", WEXITSTATUS(status));
         else
                 puts("child did not exit successfully\n");
-        printf("Done.\n");
-printf("Running ps with execlp. Now with path specified\n");
+        printf("Done.\n"); 
+        printf("Running ps with execlp. Now with path specified\n");
         execl("/bin/ps", "ps", "ax", NULL);
         wait(&status);
         if (WIFEXITED(status))
@@ -106,7 +106,7 @@ printf("Running ps with execlp. Now with path specified\n");
 ```
 
 ## OUTPUT
-![Screenshot from 2024-03-10 20-55-28](https://github.com/Johnydj123/Linux-Process-API-fork-wait-exec/assets/145953459/95e72b3c-341e-45be-aacd-80e132778e57)
+![alt text](<../Screenshot 2024-05-09 204529.png>)
 
 # RESULT:
 The programs are executed successfully.
